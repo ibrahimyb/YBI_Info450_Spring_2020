@@ -14,7 +14,6 @@ int main()
   bool Prime = true;
   do
   {
-  
   cout << "Enter a number: ";
   cin >> n;
   for(i = 2; i <= n / 2; ++i)
