@@ -14,7 +14,7 @@ int main(){
   for(x = 0;x < Maxstu;x++){
     cout << "Please enter student for index " << x << " :";
     cin.getline(students[x], Maxsize);
-    if (!strcmp("\0", students[x]) ){
+    if (students[x][0] == 0 ){
       cout << "This is the end of your list" << endl;
       break;
     }
