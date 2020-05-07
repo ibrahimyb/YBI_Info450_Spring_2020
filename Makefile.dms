@@ -1,0 +1,21 @@
+default: account
+
+savings.o: savings.cpp
+    g++ -c savings.cpp
+
+checking.o: checking.cpp
+    g++ -c checking.cpp
+
+checking.o: checking.cpp
+    g++ -c checking.cpp
+
+CreditCard.o: CreditCard.cpp
+     g++ -c CreditCard.cpp
+
+account.o: account.cpp account.h
+    g++ -c account.cpp CreditCard.o checking.o savings.o
+
+main.o: main.cpp
+    g++ -c main.cpp account.o
+    
+clean: *.o output 
