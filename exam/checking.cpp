@@ -4,11 +4,6 @@
 using namespace std;
 
 class checkings : public account {
-    set_name();
-    set_taxID();
-    set_balance();
-    account:: numdeposits = 0;
-    account:: numwithdraws = 0;
     for (int i = 0; i < 10; i++)
     {
        last10withdraws[i] = 0;
